@@ -30,8 +30,8 @@ cacheSolve <- function(x, ...) {
     message("Function is getting cache data")
     return(inversetemp)
   }
-  data <- x$get()
-  inversetemp <- solve(data)
+  temp <- x$get()
+  inversetemp <- solve(temp)
   x$setinverse(inversetemp)
   inversetemp
 }
